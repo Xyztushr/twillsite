@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "GFS Neohellenic", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+#sidenav{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #ffff;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#sidenav i{
+    font-size: 50px;
+    border: 3px grey solid;
+    margin-bottom: 20px;
+}
+#nav-bar{
+   display: none;
+}
+main{
+   
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+main::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+    height: 5px;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: black;
+   
+}
+
+header{
+    width: 100%;
+    height: 110%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    
+    
+}
+
+#gol{
+    display: flex;
+} 
+
+.gola{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+#uppernav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+   
+}
+#uppernav h4{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 900;
+}
+#uppernav h4:hover{
+    border-bottom: 1px black solid;
+    transition-duration: 1s;
+}
+#lowernav h4:hover{
+    border-bottom: 1px black solid;
+    transition-duration: 1s;
+}
+
+
+#uppernav h4 span{
+    color: grey;
+    padding: 3px;
+    font-weight: 100;
+}
+
+#lowernav{
+    display: flex;
+    text-transform: uppercase;
+    gap: 5vw;
+
+}
+#lowernav h4{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+#head-body{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: aqua; */
+}
+#uphead{
+    width: 100%;
+    height: 40%;
+    /* background-color: cornsilk; */
+    display: flex;
+    overflow-x: auto;
+   
+}
+#uphead::-webkit-scrollbar{
+    background: transparent;
+    height: 7px;
+    width:2px;
+}
+#uphead::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 198, 91, 0.338);
+    
+}
+#uplow::-webkit-scrollbar{
+    background: transparent;
+    }
+#uplow{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    overflow-x: auto;
+   
+}
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+   flex-direction: column;
+    flex-shrink: 0;
+}
+.eleme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    flex-shrink: 0;
+}
+.eleme img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 5% 20%;
+}
+.elem h1{
+    font-size: 8vw;
+    font-weight: 300;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#left{
+    align-self: flex-end;
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+
+}
+#uppertext {
+place-self: center;
+width: 80%;
+height: 50%;
+}
+#uppertext h1{
+    font-size: 8vmax;
+    font-weight: 400;
+    padding-left: 100% 50%;
+    letter-spacing: 0.7vw;
+}
+#log{
+    align-items: center;
+    display: flex;
+    width: 16vmax;
+    height: 4.2vmax;
+    border-radius: 50px;
+    border: 2px solid black;
+    justify-content: space-between;
+    padding: 0px 7px;
+    margin: 40px 0px 30px 0px;
+}
+#res{
+    font-size: 1.3vw;
+}
+#logc1{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+#logc2{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+}
+#logi{
+    display: flex;
+}
+#left-end{
+    place-self: center;
+    width: 80%;
+    height: 50%;
+}
+#left-end h4{
+    font-size: 1.5vw;
+}
+#left-end h5{
+    font-weight: 400;
+    padding:5px 12vw 0px 0px;
+    font-size: 1.3vw;
+}
+#right{
+    overflow: hidden;
+    align-self: flex-end;
+    width: 50%;
+    height: 90%;
+    display: flex;
+
+    justify-content: center;
+    }
+    #canva{
+    position: relative;
+    width: 47%;
+    height: 90%;
+    align-self: end;
+ 
+}
+#canva img{
+    width: 100%;
+    height: 90%;
+    align-self: end;
+    object-fit: cover;
+    object-position: 55%;
+}
+#canva-res{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    padding: 1vw;
+}
+#canva h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+#canva i{
+    color: gold;
+    padding-left: 1px;
+}
+#cir{
+    left: 80%;
+    bottom: 47%;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    border-radius: 50%;
+}
+#cir:hover{
+    text-transform: uppercase;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(62, 62, 62);
+}
+#canva #rot{
+    font-size: 30px;
+    position: absolute;
+    rotate: -90deg;
+    bottom: 20%;
+    left: -45%;
+}
+@media screen and (max-width:600px) {
+    #nav-bar{
+        display: flex;
+        background-color: black;
+        height: 60px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #nav-bar i{
+        font-size: 40px;
+    }
+    #uphead{
+        width: 100%;
+        height: 50%;
+    }
+    .elem{
+        width: 100%;
+        height: 100%;
+    }
+    .elem h1{
+        font-size: 15vw;
+    }
+    .eleme img{
+        object-position: center;
+    }
+    .gola{
+        background-color: white;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }    
+    #left{
+        align-self: flex-end;
+        width: 100%;
+        height: 40%;
+    
+    }
+    #right{
+        align-self: flex-end;
+        width: 100%;
+        height: 100%;
+    
+    }
+    #log{
+        width: 30vmax;
+        height: 8vmax;
+    }
+    #log h6{
+        font-size: 30px;
+    }
+    #canva{
+        width: 100%;
+    }
+    #cir{
+        display: none;
+    }
+    #canva #rot{
+        width: 60%;
+        height: 15%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        rotate: 90deg;
+        bottom: 25%;
+        left: -22%;
+    }
+    #left-end h4{
+        font-size: 10vw;
+    }
+    #left-end h5{
+        font-weight: 400;
+        padding:0px 0vw 0px 0px;
+        font-size: 5vw;
+    }
+    main::-webkit-scrollbar{
+        display: none;
+    }
+}
